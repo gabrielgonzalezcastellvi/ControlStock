@@ -1,0 +1,97 @@
+:root {
+    --principal: #33FFFF;
+    --principalClaro: #99FFFF;
+    --fuentePrincipal:'Montserrat', sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+
+body{
+    /*background: rgba(181,220,238,1);
+    background: -moz-linear-gradient(-45deg, rgba(181,220,238,1) 0%, rgba(0,174,219,1) 44%, rgba(0,178,213,1) 54%, rgba(0,199,186,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(181,220,238,1)), color-stop(44%, rgba(0,174,219,1)), color-stop(54%, rgba(0,178,213,1)), color-stop(100%, rgba(0,199,186,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(181,220,238,1) 0%, rgba(0,174,219,1) 44%, rgba(0,178,213,1) 54%, rgba(0,199,186,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(181,220,238,1) 0%, rgba(0,174,219,1) 44%, rgba(0,178,213,1) 54%, rgba(0,199,186,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(181,220,238,1) 0%, rgba(0,174,219,1) 44%, rgba(0,178,213,1) 54%, rgba(0,199,186,1) 100%);
+    background: linear-gradient(135deg, rgba(181,220,238,1) 0%, rgba(0,174,219,1) 44%, rgba(0,178,213,1) 54%, rgba(0,199,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5dcee', endColorstr='#00c7ba', GradientType=1 ); */
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.principal {
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, .75);
+    
+}
+
+.carta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imagen-redvalor {
+    width: auto;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.letra{
+    color:#FFFFFF;
+}
+
+.countdown-container {
+    padding: 20px;
+    background-color: #222222;
+    margin-bottom: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+ 
+.countdown-container .number {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+    height: 90px;
+}
+ 
+.countdown-container .concept {
+    font-size: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.div {
+    text-align: right;
+}
+
+.boton {
+    padding: .5rem;
+    border-radius: .5rem;
+    width: 100%;
+    background-color: var(--principal);
+    border: none;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    
+}
+
+.boton:hover {
+    transition: ease .5s;
+    background-color: var(--principalClaro);
+}
+
+@media ( min-width:768px ) {
+    .boton {
+        width: 60%;
+    }
+}
